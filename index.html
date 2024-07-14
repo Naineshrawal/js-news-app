@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <!-- main nav bar -->
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="logo">
+                <img src="/img/logo.png" alt="">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-links nav-items" id="sports" onclick="onNavItemClick('sports')">
+                            SPORTS
+                    </li>
+                    <li class="hover-links nav-items" id="finance" onclick="onNavItemClick('finance')">
+                            FINANCE
+                    </li>
+                    <li class="hover-links nav-items" id="politics" onclick="onNavItemClick('politics')">
+                            POLITICS
+                    </li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" class="news-input" id="search-text" placeholder="e.g Gujarat News">
+                <button class="search-btn" id="search-btn">Search</button>
+            </div>
+        </div>
+        <!-- main nav bar End-->
+    </nav>
+
+    <main>
+        <div class="cards-container flex container" id="cards-container">
+            
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/23</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et pariatur asperiores velit ratione minus nesciunt quibusdam natus porro laborum doloribus.</p>
+            </div>
+        </div>
+    </template>
+
+
+</body>
+<script src="script.js"></script>
+</html>
